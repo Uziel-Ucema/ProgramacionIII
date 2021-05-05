@@ -1,0 +1,34 @@
+<%= form_for @prenda do |f| %>
+  <div id="edit">
+    <div class="edit-container">
+      <h2 class="title-edit">Editar producto</h2>
+      <div class="form">
+        <div class="form-items">
+          <%= f.select :tipo, Prenda.tipos.keys, {} %>
+        </div>
+        <div class="form-items">
+          <%= f.select :categoria, Prenda.categoria.keys, {} %>
+        </div>
+        <div class="form-items">
+          <%= f.select :material, Prenda.materials.keys, {} %>
+        </div>
+        <div class="form-items">
+          <%= f.select :color_primario, Prenda.color_primarios.keys, {} %>
+        </div>
+         <div class="form-items">
+          <%= f.select :color_secundario, Prenda.color_secundarios.keys, {} %>
+        </div>
+        
+          <%= f.text_area :descripcion %>     
+        <div>
+          <button class='btn-edit'><%=f.submit%></button>
+        </div>
+          <button class='btn-edit'><%=link_to "Volver atrás", prendas_path(@prenda) %></button>
+      </div>
+    </div>
+  </div>
+  <% if @prenda.imagen.attached? %>
+    <h4>Imagen:</h4>
+    <%= image_tag(@prenda.imagen) %>
+  <%end %>
+<% end %>

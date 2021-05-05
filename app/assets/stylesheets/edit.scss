@@ -1,0 +1,61 @@
+#edit {
+  background: rgb(243,199,214);
+  padding-bottom: 30px;
+  padding-top: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right:13px;
+  padding-left: 13px;
+}
+
+.edit-container {
+  margin: 15px;
+  position: relative;
+}
+
+.title-edit {
+  color: #4e0d3a;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 40px;
+}
+
+.form-items .input {
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 15px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 2em;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+
+}
+.form-items .input.message {
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  resize: none;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.btn-edit {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFF;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 2em;
+  background-color: #e30425;
+  font-family: 'Montserrat', sans-serif;
+}

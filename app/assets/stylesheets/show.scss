@@ -1,0 +1,49 @@
+#show {
+    background-color: #4e0d3a;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .show-container {
+    float: right;
+    margin: 10px;
+    background-size: contain;
+    color: #e30425;
+  }
+
+  .inner-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    order: -1;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    padding-left: 6%;
+  }
+
+  .text-about p{
+    color: #FFFF;
+  }
+
+  .about-section-image {
+    margin: 30px 6%;
+  }
+
+  .text-about {
+    font-size: 1.65em;
+    line-height: 30px;
+    text-align: left;
+    margin: 35px 6%;
+  }
+  .button-dis{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

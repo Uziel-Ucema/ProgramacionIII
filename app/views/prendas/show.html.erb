@@ -1,0 +1,30 @@
+<div id="show">
+  <div class="show-container">
+    <h2>Informacion sobre la prenda</h2>
+    <figure class="about-section-image">
+     <% if @prenda.imagen.attached? %>
+        <h3>Imagen:</h3>
+        <%= image_tag(@prenda.imagen) %>
+      <% else %>
+        <h3>Imagen:</h3>
+        <img src="/assets/no_hay_imagen.jpg" alt="no_hay_imagen">
+     <%end %>
+    </figure>
+    <section class="text-about">
+      <h3>Tipo:<%= @prenda.tipo %></h3>
+      <h3>Categoria:<%= @prenda.categoria %></h3>
+      <h3>Material:<%= @prenda.material %></h3>
+      <h3>Color Primario:<%= @prenda.color_primario %></h3>
+      <h3>Color Secundario:<%= @prenda.color_secundario %></h3>
+      <h3>Descripcion:<%= @prenda.descripcion %></h3>
+    </section>
+    <button class='button-dis'>
+    sadas
+    </button>
+    <%= link_to "Editar esta prenda", edit_prenda_path(@prenda) %>
+    <%= link_to "Borrar esta prenda", @prenda, method: "delete", data: {confirm: 'Estas seguro?'} %>
+    <%= link_to "Volver atrás", prendas_path(@prenda) %>
+   
+
+  </div>
+</div>
